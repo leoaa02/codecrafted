@@ -1,0 +1,184 @@
+*{margin: 0%;
+padding: 0%;}
+
+
+p{font-family: "Poppins", sans-serif;}
+
+/* IMAGEN PRINCIPAL*/
+.img-principal{
+    display: flex !important;
+    padding: 5px;
+    position:relative;
+   margin-right: 0%;
+   margin-bottom: 0%;
+   margin-top: 10%;
+   
+}
+/*TITULO PRINCIPAL*/
+.titulo-bienvenida{
+    display: flex;
+    color:#30878c;
+    margin-left: 25%;
+    margin-right: 25%;
+    margin-top: 0%;
+    justify-content: space-between;
+    
+}
+
+/*MENU DE NAVEGACIÓN*/
+.navbar{
+    background-color: white !important;
+    font-family: "Inter", sans-serif;
+    padding: 1rem;
+    width: 100%;
+    height: 105px;
+    justify-content: space-between;
+}
+
+
+
+/*CSS de registro*/
+
+/*inputs por texto*/
+.form-block-element{
+    display: block;
+    width: 350px;
+    height: 600px;
+    background-color: #30878c;
+    margin: 10px;
+    border:  3px #30878c solid;
+
+}
+form label, form input, form button{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-bottom: 10px;
+    font-family: "Poppins", sans-serif;
+    width: auto;
+    height: auto;
+    gap: 10px;
+    }
+
+    .input-texto{
+    display: block;
+    margin-bottom: 10px;
+    margin-left: 60px;
+    width: 200px;}
+
+    /*OTROS INPUTS*/
+    .input-radio{
+        display: inline;
+        margin-left: 80px;
+    }
+/*labels*/
+.genero{
+    display:inline-block;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: 3px;
+    margin-right: 4px;
+    text-align: center;
+    position: relative;
+    right: 50px;
+    left: 15px;
+}
+
+/*Suscribe*/
+.suscribe{
+    display: inline;
+    position: relative;
+    right: 2px;
+    bottom: 5px;
+    top: 10px;
+}
+
+
+
+/*CSS COMUNIDAD*/
+.titulo-comunidad{font-family: "Inter", sans-serif;
+color: #30878c;}
+section h3{font-family:"Roboto", sans-serif;
+color: #30878c;}
+section h4{font-family: "Roboto", sans-serif;
+color: #8c3063;
+}
+
+/*GRILLA COMUNIDAD*/
+.grid-area{
+    border: 1px solid black;
+    margin: 15px;
+    display: grid;
+    grid-template-columns: repeat(6,2fr);
+    grid-template-rows: repeat(4,190px);
+    grid-template-areas:
+    "primera primera primera primera segunda segunda"
+    "primera primera primera primera segunda segunda"
+    "primera primera primera primera segunda segunda"
+    "tercera tercera tercera tercera tercera tercera" ;
+    gap: 15px 15px;
+}
+/*SECTORES DE LA GRILLA*/
+.primera{
+    background-color: white;
+    grid-area: primera;
+}
+
+.segunda{background-color: green;
+grid-area: segunda;}
+
+.tercera{background-color: blue;
+grid-area: tercera;}
+
+/*ELEMENTOS DE COMUNIDAD*/
+.portafolio-comunidad{
+    text-align: center;
+}
+.texto-comunidad{
+    color: black;
+
+}
+
+/*CSS Link en lorem/ proyectos colaborativos*/
+.link  {text-decoration:solid ;
+color: black;}
+
+
+/* CSS PORTAFOLIO*/
+.titulo-portafolio{font-family: "Inter", sans-serif;
+    color: #30878c;}
+.img-portafolio{color: black;
+text-decoration: none;}
+
+/*CSS PROYECTOS*/
+.titulo-proyectos{font-family: "Inter", sans-serif;
+    color: #30878c;}
+    section label, section input, section select{ 
+        display: inline;
+ ;
+margin-bottom: 6px;
+font-family: "Poppins", sans-serif;
+    gap: 10px;}
+
+
+/*CSS FOOTER*/
+
+.footer{display: block;
+    background-color: #001f3f;
+
+}
+
+.footer p{font-family: "Poppins", sans-serif;
+    color: white;
+    }
+
+    footer ul a{text-decoration:none;
+    color: white;
+   
+}
+footer li{
+    list-style-type: none;
+    display: inline;
+    padding: 10px;
+
+}
