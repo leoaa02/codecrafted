@@ -7,8 +7,9 @@ p{font-family: "Poppins", sans-serif;}
 /* IMAGEN PRINCIPAL*/
 .img-principal{
     display: flex !important;
+    position: relative;
+    top: -100px;
     padding: 5px;
-    position:relative;
    margin-right: 0%;
    margin-bottom: 0%;
    margin-top: 10%;
@@ -21,13 +22,25 @@ p{font-family: "Poppins", sans-serif;}
     margin-left: 25%;
     margin-right: 25%;
     margin-top: 0%;
-    justify-content: space-between;
+
     
+}
+
+/*SEGUNDO TEXTO PRINCIPAL*/
+.segundo-texto{
+    display: flex;
+    position: relative;
+    margin-left: 45%;
+    margin-right: 25%;
+    top: -480px;
+    left: 190px;
+    
+
 }
 
 /*MENU DE NAVEGACIÓN*/
 .navbar{
-    background-color: white !important;
+    background-color: #f0f0f0!important;
     font-family: "Inter", sans-serif;
     padding: 1rem;
     width: 100%;
@@ -35,6 +48,17 @@ p{font-family: "Poppins", sans-serif;}
     justify-content: space-between;
 }
 
+/*MEDIA QUERIES*/
+@media screen and (min-width: 320px) and (max-width:1280) {
+    .navbar{
+        display: flex;}
+    .titulo-bienvenida{
+            display: flex;
+  
+        }
+
+    
+}
 
 
 /*CSS de registro*/
@@ -45,8 +69,10 @@ p{font-family: "Poppins", sans-serif;}
     width: 350px;
     height: 600px;
     background-color: #30878c;
+    color: white;
     margin: 10px;
     border:  3px #30878c solid;
+    margin-left: 625px;
 
 }
 form label, form input, form button{
@@ -67,6 +93,11 @@ form label, form input, form button{
     width: 200px;}
 
     /*OTROS INPUTS*/
+.genero{
+    display: block !important;
+ margin: 5%;
+}
+
     .input-radio{
         display: inline;
         margin-left: 80px;
@@ -104,31 +135,52 @@ section h4{font-family: "Roboto", sans-serif;
 color: #8c3063;
 }
 
-/*GRILLA COMUNIDAD*/
+/*GRILLA PORTAFOLIO*/
 .grid-area{
     border: 1px solid black;
     margin: 15px;
     display: grid;
-    grid-template-columns: repeat(6,2fr);
-    grid-template-rows: repeat(4,190px);
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(3,300px);
     grid-template-areas:
-    "primera primera primera primera segunda segunda"
-    "primera primera primera primera segunda segunda"
-    "primera primera primera primera segunda segunda"
-    "tercera tercera tercera tercera tercera tercera" ;
-    gap: 15px 15px;
+    "primera primera segunda segunda"
+    "primera primera segunda segunda" 
+    "tercera tercera segunda segunda";
+    
 }
 /*SECTORES DE LA GRILLA*/
+
+/*PRIMERA GRILLA*/
+
+.database-img{
+    display: block;
+    max-width: 100%;
+    float: left;
+    left: -60px;
+    bottom: -600px;
+}
+.texto-portafolio{
+    display: inline;
+    
+}
 .primera{
-    background-color: white;
+    background-color: yellow;
     grid-area: primera;
 }
+
+.titulo-mysql{
+    text-decoration: none;
+    text-align: center;
+}
+
 
 .segunda{background-color: green;
 grid-area: segunda;}
 
 .tercera{background-color: blue;
 grid-area: tercera;}
+
+
 
 /*ELEMENTOS DE COMUNIDAD*/
 .portafolio-comunidad{
@@ -155,7 +207,7 @@ text-decoration: none;}
     color: #30878c;}
     section label, section input, section select{ 
         display: inline;
- ;
+ 
 margin-bottom: 6px;
 font-family: "Poppins", sans-serif;
     gap: 10px;}

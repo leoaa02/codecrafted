@@ -62,24 +62,35 @@
             <label for="password">Password:</label>
             <input type="password" name="password" id="password" class="input-texto">
             
+            <!--INPUTS RADIO-->
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+              <label class="form-check-label" for="flexRadioDefault1">
+                Hombre
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+              <label class="form-check-label" for="flexRadioDefault2">
+                Mujer
+              </label>
+            </div>
+
             <!--OTROS INPUTS-->
-            <label for="genero">Genero:</label>
-            <input type="radio" name="genero" id="hombre" value="hombre" class="input-radio">
-            <label for="hombre" class="genero">Hombre</label>
-            
-            <input type="radio" id="mujer" name="genero" value="mujer" class="input-radio">
-            <label for="mujer" class="genero">Mujer</label>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+              <label class="form-check-label" for="defaultCheck1">
+                Suscribirse
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" id="defaultCheck2" disabled>
+              <label class="form-check-label" for="defaultCheck2">
+                Terminos y Condiciones
+              </label>
+            </div>
+
            
-            <input type="radio" id="prefiero-no-decir" name="genero" value="prefiero-no-decir" class="input-radio">
-            <label for="prefiero-no-decir" class="genero">Prefiero no decir</label>
-
-            <label for="suscribe">Suscribirse</label>
-            <input type="checkbox" name="suscribirse" id="suscribe" class="suscribe">
-
-            <label for="terminos">Terminos y Condiciones</label>
-            <input type="checkbox" name="terminos" id="termns">
-
-            <input type="submit" value="submit">  
 
         </form>
      </section> 
