@@ -11,8 +11,11 @@
     <title>Codecrafted-Registro</title>
 </head>
 <body>
+<<<<<<< HEAD
     <!--LOGO-->
     
+=======
+>>>>>>> fb4837e2b29f8cba6353ec6d1fd1a7a8cad40836
     <!--MENU DE NAVEGACIÓN-->
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
       <div class="container-fluid">
@@ -46,6 +49,21 @@
       </div>
     </nav>
    
+<<<<<<< HEAD
+=======
+    
+    <div class="container-registro">
+<h1  class="titulo-registro">Registrate! </h1>
+<h2 class="texto-inicio-registro">Se parte de nuestra comunidad</h2>
+
+<ul class="texto-registro">
+  <li>Acceso a proyectos colaborativos</li>
+  <li>Networking con otros desarrolladores</li>
+  <li>Recursos exclusivos y tutoriales</li>
+  <li>Actualizaciones y noticias sobre tecnologia</li>
+</ul>
+    </div>
+>>>>>>> fb4837e2b29f8cba6353ec6d1fd1a7a8cad40836
       <!--SECCIÓN DE FORMULARIO-->
      <section class="form-block-element">
         <form action="/submit" method="post">
@@ -63,6 +81,9 @@
             <input type="password" name="password" id="password" class="input-texto">
             
             <!--INPUTS RADIO-->
+
+            <label for="genero">Genero:</label>
+
             <div class="form-check">
               <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
               <label class="form-check-label" for="flexRadioDefault1">
@@ -76,24 +97,37 @@
               </label>
             </div>
 
-            <!--OTROS INPUTS-->
             <div class="form-check">
+              <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+              <label class="form-check-label" for="flexRadioDefault2">
+                Otro
+              </label>
+            </div>
+
+            <!--OTROS INPUTS-->
+            <div class="form-check-2">
+
               <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
               <label class="form-check-label" for="defaultCheck1">
                 Suscribirse
               </label>
             </div>
-            <div class="form-check">
-              <input class="form-check-input" type="checkbox" value="" id="defaultCheck2" disabled>
+
+            <div class="form-check-3">
+              <input class="form-check-input" type="checkbox" value="" id="defaultCheck2" >
               <label class="form-check-label" for="defaultCheck2">
                 Terminos y Condiciones
               </label>
-            </div>
+              <br>
+              <input type="submit" value="Enviar" class="envio">
+            
 
-           
-
+            
         </form>
      </section> 
+    </div>
+
+
     <!--FOOTER-->
 <footer class="footer">
   <p>© 2024 Codecrafted</p>

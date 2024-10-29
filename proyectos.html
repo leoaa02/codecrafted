@@ -44,54 +44,47 @@
     </div>
   </div>
 </nav>
+
       <!--TITULO PROYECTOS-->
-      <h2 class="titulo-proyectos">PROYECTOS COLABORATIVOS</h2>
-      <p>Bienvenido a la sección de proyectos coleborativos, revisa los diversos proyectos de codigo abierto, unete a otros programadores,
-        o sube tu propia idea y/o proyecto.
-      </p>
+      <h1 class="titulo-proyectos">Proyectos Colaborativos</h1>
+      <div class="form-floating">
+        <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
+          <option selected>Selecciona una opción:</option>
+          <option value="1">Mas populares</option>
+          <option value="1">Mas recientes</option>
+          <option value="1">Mas vistos</option>
+          <option value="2">Mas votados</option>
+          <option value="3">Recomendados</option>
+        </select>
+        <label for="floatingSelect">Filtro:</label>
+      </div>
+      <div class="row">
+        <div class="col-4">
+          <div id="list-example" class="list-group">
+            <a class="list-group-item list-group-item-action" href="#list-item-1">HTML</a>
+            <a class="list-group-item list-group-item-action" href="#list-item-2">CSS</a>
+            <a class="list-group-item list-group-item-action" href="#list-item-3">Testing</a>
+            <a class="list-group-item list-group-item-action" href="#list-item-4">UX/UI</a>
+          </div>
+        </div>
+        <div class="col-8">
+          <div data-bs-spy="scroll" data-bs-target="#list-example" data-bs-smooth-scroll="true" class="scrollspy-example" tabindex="0">
+           <a href="#"><h4 id="list-item-1">Proyecto 1</h4></a> 
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, id blanditiis.</p>
+            <a href="#"><h4 id="list-item-2">Proyecto 2</h4></a> 
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, id blanditiis.</p>
+            <a href="#"><h4 id="list-item-3">Proyecto 3</h4></a> 
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, id blanditiis.</p>
+            <a href="#"><h4 id="list-item-4">Proyecto 4</h4></a> 
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, id blanditiis.</p>
+          </div>
+        </div>
+      </div>
 
-      <section class="busqueda">
-<label for="buscar">Buscar</label>
-<input type="text" name="busqueda" id="buscar">
-
-<label for="opciones">Filtros:</label>
-<select name="opciones" id="opciones">
-    <option value="1">Mas recientes</option>
-    <option value="2">Mas relevantas</option>
-    <option value="3">Mas buscadas</option>
-</select>
-
-<p>Categoria:</p>
-<input type="checkbox" name="html" id="categoria">
-<label for="categoria">HTML</label>
-
-<input type="checkbox" name="css" id="categoria">
-<label for="categoria">CSS</label>
-
-<input type="checkbox" name="javascript" id="categoria">
-<label for="categoria">JAVASCRIPT</label>
-
-<input type="checkbox" name="testing" id="categoria">
-<label for="categoria">TESTING</label>
-
-<input type="checkbox" name="ux/ui" id="categoria">
-<label for="categoria">UX/UI</label>
-
-<input type="checkbox" name="frontend" id="categoria">
-<label for="categoria">Frontend</label>
-
-</section>
-    <h4>Tema:UX/UI </h4>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-         Asperiores ipsum provident enim beatae repellat iusto soluta recusandae distinctio at. 
-         Cum reiciendis soluta, recusandae odit quia rem non sit <strong><a href="#" class="link">dignissimos quisquam!</a></strong>
-    <h4>Tema:Frontend</h4>
-    Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
-    Id magni alias atque distinctio numquam ratione aliquam amet 
-    aliquid excepturi incidunt quaerat quasi, commodi est odit nulla aperiam consequuntur <strong> <a href="#" class="link">enim explicabo!</a> </strong>
-    </section>
-
-    
     
    <!--FOOTER-->
 <footer class="footer">
