@@ -1,0 +1,11 @@
+*{margin: 0%;
+    padding: 0%;}
+    
+    
+    p{font-family: "Poppins", sans-serif;}
+
+    @import "./inicio/inicio";
+    @import "./registro/registro";
+    @import "./portafolio/portafolio";
+    @import "./footer/footer";
+    @import "./proyectos/proyecto.scss";  
