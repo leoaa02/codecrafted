@@ -1,9 +1,8 @@
 /*SCSS PROYECTOS*/
-.proyecto-area{ 
 
 
   /*TITULO*/
-  .titulo-proyectos{
+  .proyecto-area { .titulo-proyectos{
     text-align: center;
     color: #30878c;
   }
@@ -23,7 +22,7 @@
     font-family: $font-aria;
   }
   
-  .filter-sidebar {
+  .barra-filtro {
     width: 200px; // Puedes ajustar el ancho
     padding: 20px;
     background-color: $bg-color;
@@ -85,5 +84,41 @@
     }
   }
   
-  
    }
+
+   //PROYECTOS 
+   .proyecto-uno {
+    background-color: #548DDC;
+    display: flexbox;
+    position: relative;
+    left: 8cm;
+    top: -13.3cm;
+    width: 950px;
+    height: 200px;
+    border: 1px solid black;
+    border-radius: 3px;
+    color: black;
+   
+    .titulo-p1{ 
+      font-size: 20px;
+      text-align: center;
+      a{text-decoration: none;
+      color: rgb(10, 59, 83);}
+    }
+
+    .p-proyectos{
+       font-family: Arial, Helvetica, sans-serif;
+    }
+    .iconos{
+      display: flex;
+      .icono{
+        position: relative;
+        right: -21.6cm;
+        top: -30px;
+        gap: 15px; /* Espacio entre los íconos */
+      
+       }
+    
+    }
+  
+  }

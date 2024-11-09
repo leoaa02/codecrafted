@@ -288,14 +288,11 @@ form label, form input, form button {
 }
 
 /*SCSS PROYECTOS*/
-
-  /*TITULO*/
-
-  .proyecto-area .titulo-proyectos {
-    text-align: center;
-    color: #30878c;
-  }  
-  /*BARRA LATERAL FILTROS*/
+/*TITULO*/
+.proyecto-area .titulo-proyectos {
+  text-align: center;
+  color: #30878c;
+}
 .proyecto-area body {
   font-family: Arial, sans-serif;
 }
@@ -311,7 +308,6 @@ form label, form input, form button {
   color: white;
   margin-bottom: 10px;
 }
-/*BUSQUEDA*/
 .proyecto-area .barra-filtro .search-bar {
   width: 100%;
   padding: 8px;
@@ -319,7 +315,6 @@ form label, form input, form button {
   border: 1px solid #ccc;
   border-radius: 3px;
 }
-/*PREFERENCIAS*/
 .proyecto-area .barra-filtro .filter-select {
   width: 100%;
   padding: 8px;
@@ -328,8 +323,18 @@ form label, form input, form button {
   border-radius: 3px;
   background-color: #f7f7f7;
 }
-
-/*CATEGORIAS*/
+.proyecto-area .barra-filtro .filter-btn {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  background-color: #f0f0f0;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  cursor: pointer;
+}
+.proyecto-area .barra-filtro .filter-btn:hover {
+  background-color: #ddd;
+}
 .proyecto-area .barra-filtro .checkbox-group {
   display: grid;
   grid-template-columns: 1fr;
@@ -344,5 +349,38 @@ form label, form input, form button {
 .proyecto-area .barra-filtro .checkbox-group label input[type=checkbox] {
   margin-right: 8px;
 }
- 
+
+.proyecto-uno {
+  background-color: #548DDC;
+  display: flexbox;
+  position: relative;
+  left: 8cm;
+  top: -13.3cm;
+  width: 950px;
+  height: 200px;
+  border: 1px solid black;
+  border-radius: 3px;
+  color: black;
+}
+.proyecto-uno .titulo-p1 {
+  font-size: 20px;
+  text-align: center;
+}
+.proyecto-uno .titulo-p1 a {
+  text-decoration: none;
+  color: rgb(10, 59, 83);
+}
+.proyecto-uno .p-proyectos {
+  font-family: Arial, Helvetica, sans-serif;
+}
+.proyecto-uno .iconos {
+  display: flex;
+}
+.proyecto-uno .iconos .icono {
+  position: relative;
+  right: -21.6cm;
+  top: -30px;
+  gap: 15px; /* Espacio entre los íconos */
+}
+
 /*# sourceMappingURL=style.css.map */
