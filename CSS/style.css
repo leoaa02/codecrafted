@@ -358,9 +358,10 @@ form label, form input, form button {
   top: -13.3cm;
   width: 950px;
   height: 200px;
-  border: 1px solid black;
-  border-radius: 3px;
+  border: 2px solid black;
+  border-radius: 5px;
   color: black;
+  margin-bottom: 15px;
 }
 .proyecto-uno .titulo-p1 {
   font-size: 20px;
@@ -380,7 +381,109 @@ form label, form input, form button {
   position: relative;
   right: -21.6cm;
   top: -30px;
-  gap: 15px; /* Espacio entre los íconos */
+  gap: 15px;
+}
+
+.proyecto-dos {
+  background-color: #548DDC;
+  display: flexbox;
+  position: relative;
+  left: 8cm;
+  top: -13.3cm;
+  width: 950px;
+  height: 200px;
+  border: 2px solid black;
+  border-radius: 5px;
+  color: black;
+  margin-bottom: 15px;
+}
+.proyecto-dos .titulo-p2 {
+  font-size: 20px;
+  text-align: center;
+}
+.proyecto-dos .titulo-p2 a {
+  text-decoration: none;
+  color: rgb(10, 59, 83);
+}
+.proyecto-dos .p-proyectos {
+  font-family: Arial, Helvetica, sans-serif;
+}
+.proyecto-dos .iconos {
+  display: flex;
+}
+.proyecto-dos .iconos .icono {
+  position: relative;
+  right: -21.6cm;
+  top: -30px;
+  gap: 15px;
+}
+
+.proyecto-tres {
+  background-color: #548DDC;
+  display: flexbox;
+  position: relative;
+  left: 8cm;
+  top: -13.3cm;
+  width: 950px;
+  height: 200px;
+  border: 2px solid black;
+  border-radius: 5px;
+  color: black;
+  margin-bottom: 15px;
+}
+.proyecto-tres .titulo-p3 {
+  font-size: 20px;
+  text-align: center;
+}
+.proyecto-tres .titulo-p3 a {
+  text-decoration: none;
+  color: rgb(10, 59, 83);
+}
+.proyecto-tres .p-proyectos {
+  font-family: Arial, Helvetica, sans-serif;
+}
+.proyecto-tres .iconos {
+  display: flex;
+}
+.proyecto-tres .iconos .icono {
+  position: relative;
+  right: -21.6cm;
+  top: -30px;
+  gap: 15px;
+}
+
+.proyecto-cuatro {
+  background-color: #548DDC;
+  display: flexbox;
+  position: relative;
+  left: 8cm;
+  top: -13.3cm;
+  width: 950px;
+  height: 200px;
+  border: 2px solid black;
+  border-radius: 5px;
+  color: black;
+  margin-bottom: 15px;
+}
+.proyecto-cuatro .titulo-p4 {
+  font-size: 20px;
+  text-align: center;
+}
+.proyecto-cuatro .titulo-p4 a {
+  text-decoration: none;
+  color: rgb(10, 59, 83);
+}
+.proyecto-cuatro .p-proyectos {
+  font-family: Arial, Helvetica, sans-serif;
+}
+.proyecto-cuatro .iconos {
+  display: flex;
+}
+.proyecto-cuatro .iconos .icono {
+  position: relative;
+  right: -21.6cm;
+  top: -30px;
+  gap: 15px;
 }
 
 /*# sourceMappingURL=style.css.map */
