@@ -89,26 +89,33 @@
    //PROYECTOS 
    .proyecto-uno {
     background-color: #548DDC;
-    display: flexbox;
+    display: flex;
     position: relative;
     left: 8cm;
     top: -13.3cm;
     width: 950px;
-    height: 200px;
+    height: 250px;
     border: 2px solid black;
     border-radius: 5px;
     color: black;
     margin-bottom: 15px;
+    justify-content: flex-end;
    
     .titulo-p1{ 
+      display: inline-block;
       font-size: 20px;
       text-align: center;
       a{text-decoration: none;
       color: rgb(10, 59, 83);}
+      margin-left: 200px;
+      
     }
 
     .p-proyectos{
+      display: inline-block;
+      margin-top: 60px;
        font-family: Arial, Helvetica, sans-serif;
+       
     }
     
     .iconos{
@@ -127,7 +134,7 @@
 
   .proyecto-dos{
     background-color: #548DDC;
-    display: flexbox;
+    display: flex;
     position: relative;
     left: 8cm;
     top: -13.3cm;
@@ -163,7 +170,7 @@
 
   .proyecto-tres{
     background-color: #548DDC;
-    display: flexbox;
+    display: flex;
     position: relative;
     left: 8cm;
     top: -13.3cm;
@@ -199,7 +206,7 @@
  
   .proyecto-cuatro{
       background-color: #548DDC;
-      display: flexbox;
+      display: flex;
       position: relative;
       left: 8cm;
       top: -13.3cm;
