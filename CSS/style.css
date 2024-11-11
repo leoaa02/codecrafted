@@ -4,12 +4,10 @@
   padding: 0%;
 }
 
-
 p {
   font-family: "Poppins", sans-serif;
 }
 
-/*INICIO*/
 .img-principal {
   display: flex !important;
   position: relative;
@@ -193,7 +191,6 @@ form label, form input, form button {
   background-color: #23d4c2;
 }
 
-
 /*GRILLA PORTAFOLIO*/
 .grid-area {
   border: 2px solid black;
@@ -203,6 +200,9 @@ form label, form input, form button {
   grid-template-rows: repeat(3, 300px);
   grid-template-areas: "primera primera segunda segunda" "primera primera segunda segunda" "tercera tercera segunda segunda";
   /*SECTORES DE LA GRILLA*/
+  /*PRIMERA GRILLA*/
+  /*SEGUNDA GRILLA*/
+  /*TERCERA GRILLA*/
 }
 .grid-area .database-img {
   display: block;
@@ -216,7 +216,6 @@ form label, form input, form button {
   text-align: center;
   font-size: 14px;
 }
-/*PRIMERA GRILLA*/
 .grid-area .primera {
   background-color: #f5f5f5;
   grid-area: primera;
@@ -227,8 +226,6 @@ form label, form input, form button {
   text-align: center;
   color: black;
 }
-
-/*SEGUNDA GRILLA*/
 .grid-area .segunda {
   background-color: #f5f5f5;
   grid-area: segunda;
@@ -247,8 +244,6 @@ form label, form input, form button {
   font-size: 14px;
   list-style-type: disc black;
 }
-
-/*TERCERA GRILLA*/
 .grid-area .tercera {
   background-color: #f5f5f5;
   grid-area: tercera;
@@ -263,8 +258,17 @@ form label, form input, form button {
   font-size: 14px;
 }
 
+/* CSS PORTAFOLIO*/
+.titulo-portafolio {
+  font-family: "Inter", sans-serif;
+  color: #30878c;
+}
 
-/*FOOTER*/
+.img-portafolio {
+  color: black;
+  text-decoration: none;
+}
+
 .footer {
   display: block;
   background-color: #001f3f;
@@ -293,8 +297,6 @@ form label, form input, form button {
 .proyecto-area body {
   font-family: Arial, sans-serif;
 }
-
-/*BARRA*/
 .proyecto-area .barra-filtro {
   width: 200px;
   padding: 20px;
@@ -348,150 +350,197 @@ form label, form input, form button {
 .proyecto-area .barra-filtro .checkbox-group label input[type=checkbox] {
   margin-right: 8px;
 }
-/*PROYECTOS*/
-/*PROYECTO 1*/
+
 .proyecto-uno {
   background-color: #548DDC;
   display: flex;
   position: relative;
+  flex-direction: column;
   left: 8cm;
   top: -13.3cm;
   width: 950px;
-  height: 250px;
+  height: 1875%;
   border: 2px solid black;
   border-radius: 5px;
   color: black;
   margin-bottom: 15px;
-  justify-content: flex-end;
+  justify-content: space-between;
 }
 .proyecto-uno .titulo-p1 {
-  display: inline-block;
   font-size: 20px;
   text-align: center;
-  margin-left: 200px;
+  margin-bottom: 10px;
+  top: 2px;
+  right: 15px;
+  left: -15px;
 }
 .proyecto-uno .titulo-p1 a {
   text-decoration: none;
   color: rgb(10, 59, 83);
 }
 .proyecto-uno .p-proyectos {
-  display: inline-block;
-  margin-top: 60px;
+  text-align: justify;
+  top: 15px;
+  bottom: 5px;
   font-family: Arial, Helvetica, sans-serif;
+  white-space: normal;
+  margin: 0;
+  padding: 0;
 }
 .proyecto-uno .iconos {
   display: flex;
+  gap: 10px;
+  align-self: flex-end;
+  margin-top: auto;
+  margin-bottom: 10px;
 }
 .proyecto-uno .iconos .icono {
-  position: relative;
-  right: -21.6cm;
-  top: -30px;
-  gap: 15px;
+  font-size: 22px;
+  cursor: pointer;
 }
 
-/*PROYECTO DOS*/
 .proyecto-dos {
   background-color: #548DDC;
   display: flex;
   position: relative;
+  flex-direction: column;
   left: 8cm;
   top: -13.3cm;
   width: 950px;
-  height: 200px;
+  height: 1875%;
   border: 2px solid black;
   border-radius: 5px;
   color: black;
   margin-bottom: 15px;
+  justify-content: space-between;
 }
 .proyecto-dos .titulo-p2 {
   font-size: 20px;
   text-align: center;
+  margin-bottom: 10px;
+  top: 2px;
+  right: 15px;
+  left: -15px;
 }
 .proyecto-dos .titulo-p2 a {
   text-decoration: none;
   color: rgb(10, 59, 83);
 }
 .proyecto-dos .p-proyectos {
+  text-align: justify;
+  top: 15px;
+  bottom: 5px;
   font-family: Arial, Helvetica, sans-serif;
+  white-space: normal;
+  margin: 0;
+  padding: 0;
 }
 .proyecto-dos .iconos {
   display: flex;
+  gap: 10px;
+  align-self: flex-end;
+  margin-top: auto;
+  margin-bottom: 10px;
 }
 .proyecto-dos .iconos .icono {
-  position: relative;
-  right: -21.6cm;
-  top: -30px;
-  gap: 15px;
+  font-size: 22px;
+  cursor: pointer;
 }
 
-/*PROYECTO TRES*/
 .proyecto-tres {
   background-color: #548DDC;
   display: flex;
   position: relative;
+  flex-direction: column;
   left: 8cm;
   top: -13.3cm;
   width: 950px;
-  height: 200px;
+  height: 1875%;
   border: 2px solid black;
   border-radius: 5px;
   color: black;
   margin-bottom: 15px;
+  justify-content: space-between;
 }
 .proyecto-tres .titulo-p3 {
   font-size: 20px;
   text-align: center;
+  margin-bottom: 10px;
+  top: 2px;
+  right: 15px;
+  left: -15px;
 }
 .proyecto-tres .titulo-p3 a {
   text-decoration: none;
   color: rgb(10, 59, 83);
 }
 .proyecto-tres .p-proyectos {
+  text-align: justify;
+  top: 15px;
+  bottom: 5px;
   font-family: Arial, Helvetica, sans-serif;
+  white-space: normal;
+  margin: 0;
+  padding: 0;
 }
 .proyecto-tres .iconos {
   display: flex;
+  gap: 10px;
+  align-self: flex-end;
+  margin-top: auto;
+  margin-bottom: 10px;
 }
 .proyecto-tres .iconos .icono {
-  position: relative;
-  right: -21.6cm;
-  top: -30px;
-  gap: 15px;
+  font-size: 22px;
+  cursor: pointer;
 }
 
-/*PROYECTO CUATRO*/
 .proyecto-cuatro {
   background-color: #548DDC;
   display: flex;
   position: relative;
+  flex-direction: column;
   left: 8cm;
   top: -13.3cm;
   width: 950px;
-  height: 200px;
+  height: 1875%;
   border: 2px solid black;
   border-radius: 5px;
   color: black;
   margin-bottom: 15px;
+  justify-content: space-between;
 }
 .proyecto-cuatro .titulo-p4 {
   font-size: 20px;
   text-align: center;
+  margin-bottom: 10px;
+  top: 2px;
+  right: 15px;
+  left: -15px;
 }
 .proyecto-cuatro .titulo-p4 a {
   text-decoration: none;
   color: rgb(10, 59, 83);
 }
 .proyecto-cuatro .p-proyectos {
+  text-align: justify;
+  top: 15px;
+  bottom: 5px;
   font-family: Arial, Helvetica, sans-serif;
+  white-space: normal;
+  margin: 0;
+  padding: 0;
 }
 .proyecto-cuatro .iconos {
   display: flex;
+  gap: 10px;
+  align-self: flex-end;
+  margin-top: auto;
+  margin-bottom: 10px;
 }
 .proyecto-cuatro .iconos .icono {
-  position: relative;
-  right: -21.6cm;
-  top: -30px;
-  gap: 15px;
+  font-size: 22px;
+  cursor: pointer;
 }
 
 /*# sourceMappingURL=style.css.map */
