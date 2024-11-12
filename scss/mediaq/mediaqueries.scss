@@ -1,0 +1,123 @@
+// Estilos base (para dispositivos grandes por defecto)
+body {
+    font-size: 16px;
+    line-height: 1.5;
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  // Contenedor principal
+  .contenedor {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  
+   // Títulos de la sección de inicio
+.titulo {
+    font-size: 3em;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #333;
+  
+    // Media Query para pantallas pequeñas
+    @media (max-width: 600px) {
+      font-size: 2em; // Reducir el tamaño del título
+      margin-bottom: 15px;
+      padding: 0 20px; // Añadir un poco de relleno a los lados para evitar que toque los bordes
+    }
+  
+    @media (max-width: 375px) { // Ajuste adicional para pantallas muy pequeñas (iPhone SE)
+      font-size: 1.5em;
+      margin-bottom: 10px;
+    }
+  }
+  
+    // Media Query para pantallas medianas (600px a 900px)
+    @media (max-width: 900px) {
+      padding: 15px;
+      width: 90%;
+    }
+  
+    // Media Query para pantallas grandes (1200px en adelante)
+    @media (min-width: 1200px) {
+      padding: 30px;
+      width: 80%;
+    }
+  }
+  
+  // Estilo de imagen responsiva (prevención de estiramiento)
+  img {
+    max-width: 100%; // Se asegura de que las imágenes no se salgan de su contenedor
+    height: auto;    // Mantiene las proporciones de la imagen
+    display: block;  // Elimina el espacio en blanco debajo de la imagen
+  
+    // Media Query para pantallas pequeñas (máximo 600px)
+    @media (max-width: 600px) {
+      width: 100%;
+      max-width: 100%;
+    }
+  }
+  
+  // Barra de navegación
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+  
+    // Media Query para pantallas pequeñas
+    @media (max-width: 600px) {
+      flex-direction: column;
+      padding: 10px 0;
+    }
+  
+    // Media Query para pantallas medianas
+    @media (max-width: 900px) {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+  }
+  
+  // Títulos de la sección de inicio
+  .titulo {
+    font-size: 2em;
+    margin-bottom: 20px;
+    text-align: center;
+  
+    // Media Query para pantallas pequeñas
+    @media (max-width: 600px) {
+      font-size: 1.5em;
+      margin-bottom: 15px;
+    }
+  }
+  
+  // Estilo para los botones
+  button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+  
+    &:hover {
+      background-color: #0056b3;
+    }
+  
+    @media (max-width: 600px) {
+      width: 100%;
+      padding: 12px;
+      font-size: 18px;
+    }
+  
+    @media (min-width: 1200px) {
+      padding: 14px 30px;
+      font-size: 18px;
+    }
+  }
+  
