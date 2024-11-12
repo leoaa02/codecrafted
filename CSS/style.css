@@ -565,6 +565,7 @@ body {
   text-align: center;
   color: #333;
 }
+/*Media Queries*/
 @media (max-width: 600px) {
   .contenedor .titulo {
     font-size: 2em;

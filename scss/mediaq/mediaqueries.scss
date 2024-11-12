@@ -1,3 +1,4 @@
+
 // Estilos base (para dispositivos grandes por defecto)
 body {
     font-size: 16px;
@@ -15,26 +16,12 @@ body {
     margin: 0 auto;
     padding: 20px;
   
-   // Títulos de la sección de inicio
-.titulo {
-    font-size: 3em;
-    font-weight: bold;
-    margin-bottom: 20px;
-    text-align: center;
-    color: #333;
-  
-    // Media Query para pantallas pequeñas
+    // Media Query para pantallas pequeñas (máximo 600px)
     @media (max-width: 600px) {
-      font-size: 2em; // Reducir el tamaño del título
-      margin-bottom: 15px;
-      padding: 0 20px; // Añadir un poco de relleno a los lados para evitar que toque los bordes
+      padding: 10px;
+      width: 100%;
+      max-width: 100%;
     }
-  
-    @media (max-width: 375px) { // Ajuste adicional para pantallas muy pequeñas (iPhone SE)
-      font-size: 1.5em;
-      margin-bottom: 10px;
-    }
-  }
   
     // Media Query para pantallas medianas (600px a 900px)
     @media (max-width: 900px) {
