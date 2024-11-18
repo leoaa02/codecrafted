@@ -36,11 +36,11 @@ body {
     }
   }
   
-  // Estilo de imagen responsiva (prevención de estiramiento)
+  
   img {
-    max-width: 100%; // Se asegura de que las imágenes no se salgan de su contenedor
-    height: auto;    // Mantiene las proporciones de la imagen
-    display: block;  // Elimina el espacio en blanco debajo de la imagen
+    max-width: 100%; 
+    height: auto;    
+    display: block;  
   
     // Media Query para pantallas pequeñas (máximo 600px)
     @media (max-width: 600px) {
@@ -104,7 +104,7 @@ body {
   
     @media (min-width: 1200px) {
       padding: 14px 30px;
-      font-size: 18px;
+      font-size: 3em;
     }
   }
   
