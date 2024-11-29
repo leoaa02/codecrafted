@@ -146,3 +146,22 @@
 
 };
  }
+
+ @media (max-width: 1024px){
+
+    .navbar{
+        width: 100%;
+        height: auto;
+        justify-content: space-between;
+      
+    }
+
+    .container-registro{
+        text-align: center;
+        font-size: 20px;
+        
+    }
+.proyecto-uno{
+        margin-top: 50px;
+    }
+ }

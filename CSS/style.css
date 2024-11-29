@@ -7,6 +7,13 @@ p {
   font-family: "Poppins", sans-serif;
 }
 
+body {
+  flex-direction: column;
+}
+body overflow-x:hidden * {
+  flex: 1;
+}
+
 html, body {
   height: 100%;
   margin: 0;
@@ -662,6 +669,20 @@ form label, form input, form button {
   }
   .footer {
     position: static;
+  }
+}
+@media (max-width: 1024px) {
+  .navbar {
+    width: 100%;
+    height: auto;
+    justify-content: space-between;
+  }
+  .container-registro {
+    text-align: center;
+    font-size: 20px;
+  }
+  .proyecto-uno {
+    margin-top: 50px;
   }
 }
 
