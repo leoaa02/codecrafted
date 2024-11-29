@@ -1,4 +1,3 @@
-@charset "UTF-8";
 * {
   margin: 0%;
   padding: 0%;
@@ -8,49 +7,57 @@ p {
   font-family: "Poppins", sans-serif;
 }
 
-.img-principal {
-  display: flex !important;
-  position: relative;
-  padding: 5px;
-}
-.img-principal .img-male {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 50%;
-}
-
-.titulo-bienvenida {
+html, body {
+  height: 100%;
+  margin: 0;
   display: flex;
-  color: #30878c;
-  margin-left: 4px;
-  margin-right: 4px;
-  margin-top: 0%;
+  flex-direction: column;
 }
 
-/*SEGUNDO TEXTO PRINCIPAL*/
-.segundo-texto {
-  display: flex;
-  position: relative;
-  margin-left: 45%;
-  margin-right: 25%;
-  top: -480px;
-  left: 190px;
-}
-
-/*MENU DE NAVEGACIÓN*/
+/*BARRA DE NAVEGACION*/
 .navbar {
-  background-color: #B8E0DB !important;
-  display: inline-block;
-  font-family: "Inter", sans-serif;
-  padding: 1rem;
+  display: flex;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  align-items: center;
+  background-color: #B8E0DB;
+  font-size: 0.75em;
+  justify-content: space-between;
   width: 100%;
-  height: 105px;
-  justify-content: center;
-  gap: 30px;
 }
-.navbar .navbar-toggler {
+
+.navbar a {
+  color: black;
+  text-decoration: none;
+}
+
+.elements {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.elements a {
+  color: black;
+  text-decoration: none;
+}
+
+/*CONTENIDO DE INICIO*/
+.titulo-bienvenida {
+  margin-top: 10px;
   color: #30878c;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.img-inicio {
+  align-items: flex-start;
+}
+
+.texto-bienvenida {
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 /*SCSS de Registro*/
@@ -103,7 +110,7 @@ p {
 /*FORMULARIO*/
 /*inputs por texto*/
 .form-block-element {
-  display: block;
+  display: flex;
   width: 350px;
   height: 600px;
   padding: 20px;
@@ -250,6 +257,7 @@ form label, form input, form button {
 .grid-area .lista-testing {
   font-size: 14px;
   list-style-type: disc black;
+  list-style-position: inside;
 }
 .grid-area .tercera {
   background-color: #f5f5f5;
@@ -279,7 +287,7 @@ form label, form input, form button {
 .footer {
   display: block;
   background-color: #001f3f;
-  padding-bottom: 15px;
+  padding-bottom: 20px;
 }
 .footer p {
   font-family: "Poppins", sans-serif;
@@ -550,117 +558,110 @@ form label, form input, form button {
   cursor: pointer;
 }
 
-body {
-  font-size: 16px;
-  line-height: 1.5;
-  font-family: "Arial", sans-serif;
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-.contenedor {
-  width: 100%;
-  margin: 0 auto;
-  padding: 20px;
-  /* Reducción del tamaño del logo en pantallas pequeñas */
-}
-@media (max-width: 600px) {
-  .contenedor .navbar {
-    flex-direction: column;
+@media (max-width: 320px) {
+  .navbar {
+    margin-bottom: 25%;
+    width: 100%;
+    font-size: 10px;
+    text-align: center;
+    justify-content: space-between;
+    padding: 2px;
   }
-  .contenedor .navbar-toggler {
+  .form-block-element {
     display: flex;
+    width: 100%;
   }
-  .contenedor .img-principal {
-    width: 50%;
+  .grid-area {
+    grid-template-columns: repeat(4, 2fr);
+    grid-template-rows: repeat(2, 1fr);
+    font-size: small;
+  }
+  .grid-area .primera .database-img {
+    display: none;
+  }
+  .grid-area .segunda .male-pc {
+    display: none;
+  }
+  .titulo-proyectos {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    font-size: medium;
+    display: block;
+  }
+  .proyecto-uno {
+    width: 80%;
+    height: auto;
+  }
+  .proyecto-dos {
+    width: 80%;
+    height: auto;
+  }
+  .proyecto-tres {
+    width: 80%;
+    height: auto;
+  }
+  .proyecto-cuatro {
+    width: 80%;
+    height: auto;
+  }
+  .barra-filtro {
+    width: 70%;
+  }
+  .footer {
+    position: static;
   }
 }
 @media (max-width: 768px) {
-  .contenedor .navbar-brand img {
-    width: 120px; /* Ajusta según necesites */
-    height: auto; /* Mantiene la proporción */
-  }
-}
-@media (max-width: 900px) {
-  .contenedor {
-    padding: 15px;
-    width: 90%;
-  }
-}
-@media (min-width: 1200px) {
-  .contenedor {
-    padding: 30px;
-    width: 80%;
-  }
-}
-
-img {
-  max-width: 100%;
-  height: auto;
-  display: block;
-}
-@media (max-width: 600px) {
-  img {
-    width: 100%;
-    max-width: 100%;
-  }
-}
-
-.navbar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 20px 0;
-}
-@media (max-width: 600px) {
   .navbar {
-    flex-direction: column;
-    padding: 10px 0;
-  }
-}
-@media (max-width: 900px) {
-  .navbar {
-    flex-direction: row;
+    width: auto;
+    height: auto;
+    font-size: 14px;
     justify-content: space-between;
   }
-}
-
-.titulo {
-  font-size: 2em;
-  margin-bottom: 20px;
-  text-align: center;
-}
-@media (max-width: 600px) {
-  .titulo {
-    font-size: 1.5em;
-    margin-bottom: 15px;
+  .container-registro {
+    width: 50%;
+    font-size: 15px;
+    text-align: center;
+    margin: 20px;
+    text-align: center;
   }
-}
-
-button {
-  padding: 10px 20px;
-  font-size: 16px;
-  background-color: #007bff;
-  color: white;
-  border: none;
-  cursor: pointer;
-  border-radius: 5px;
-}
-button:hover {
-  background-color: #0056b3;
-}
-@media (max-width: 600px) {
-  button {
-    width: 100%;
-    padding: 12px;
-    font-size: 18px;
+  .form-block-element {
+    display: flex;
+    width: 50%;
   }
-}
-@media (min-width: 1200px) {
-  button {
-    padding: 14px 30px;
-    font-size: 3em;
+  .grid-area {
+    grid-template-columns: repeat(4, 2fr);
+    grid-template-rows: repeat(2, 1fr);
+    font-size: small;
+  }
+  .primera .database-img {
+    display: none;
+  }
+  .titulo-proyectos {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    font-size: medium;
+    display: block;
+  }
+  .proyecto-uno {
+    margin-top: 50px;
+    width: 80%;
+    height: auto;
+  }
+  .proyecto-dos {
+    width: 80%;
+    height: auto;
+  }
+  .proyecto-tres {
+    width: 80%;
+    height: auto;
+  }
+  .proyecto-cuatro {
+    width: 80%;
+    height: auto;
+  }
+  .footer {
+    position: static;
   }
 }
 

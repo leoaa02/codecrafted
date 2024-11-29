@@ -1,50 +1,53 @@
-//SCSS INICIO
-
-//IMAGEN
-.img-principal{
-    display: flex !important;
-    position: relative;
-    padding: 5px;
-    .img-male{
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 50%;
-    }
-
+html, body {
+    height: 100%;              
+    margin: 0;                 
+    display: flex;
+    flex-direction: column;    
    
+  }
+
+/*BARRA DE NAVEGACION*/
+.navbar{
+    display: flex;
+font-family: Arial, Helvetica, sans-serif;
+text-align: center;
+align-items: center;
+background-color: #B8E0DB;
+font-size: 0.75em;
+justify-content: space-between;
+width: 100%;
 }
 
-//TITULO PRINCIPAL
-.titulo-bienvenida{
+.navbar a{
+    color: black;
+    text-decoration: none;
+}
+.elements{
+    list-style-type: none;
     display: flex;
-    color:#30878c;
-    margin-left: 4px;
-    margin-right: 4px;
-    margin-top: 0%; }
-
-/*SEGUNDO TEXTO PRINCIPAL*/
-.segundo-texto{
-    display: flex;
-    position: relative;
-    margin-left: 45%;
-    margin-right: 25%;
-    top: -480px;
-    left: 190px;
-}    
-
-/*MENU DE NAVEGACIÓN*/
-.navbar{
-    background-color: #B8E0DB!important;
-    display: inline-block;
-    font-family: "Inter", sans-serif;
-    padding: 1rem;
+    align-items: center;
+    justify-content: space-between;
     width: 100%;
-    height: 105px;
-    justify-content: center;
-    gap: 30px;
+    
 
-    .navbar-toggler{
-        color: #30878c;
-    }
-  }
+}
+.elements a{
+    color: black;
+    text-decoration: none;
+}
+
+/*CONTENIDO DE INICIO*/
+.titulo-bienvenida{
+    margin-top: 10px;
+    color: #30878c;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.img-inicio{
+    align-items: flex-start;
+}
+
+.texto-bienvenida{
+    font-family: Arial, Helvetica, sans-serif;
+}
