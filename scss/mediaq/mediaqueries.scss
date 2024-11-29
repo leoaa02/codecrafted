@@ -16,19 +16,22 @@ body {
     padding: 20px;
   
     // Media Query para pantallas pequeñas (máximo 600px)
-    @media (max-width: 600px) {
+    @media  (max-width: 600px) {
       .navbar{flex-direction: column;}
       .navbar-toggler{
         display: flex;
       }
      .img-principal{
       width: 50%;
-     }
-   
-      padding: 10px;
-      width: 100%;
-      max-width: 100%;
-    }
+     }  }
+   /* Reducción del tamaño del logo en pantallas pequeñas */
+@media (max-width: 768px) {
+  .navbar-brand img {
+    width: 120px;  /* Ajusta según necesites */
+    height: auto;  /* Mantiene la proporción */
+  
+ }  }
+
   
     // Media Query para pantallas medianas (600px a 900px)
     @media (max-width: 900px) {

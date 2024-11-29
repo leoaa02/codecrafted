@@ -4,6 +4,13 @@
     
     p{font-family: "Poppins", sans-serif;}
 
+    body{
+        overflow-x:hidden
+        *{flex: 1;}
+        flex-direction: column;
+
+    }
+
     @import "./inicio/inicio";
     @import "./registro/registro";
     @import "./portafolio/portafolio";
