@@ -12,12 +12,19 @@ body {
   // Contenedor principal
   .contenedor {
     width: 100%;
-    max-width: 1200px;
     margin: 0 auto;
     padding: 20px;
   
     // Media Query para pantallas pequeñas (máximo 600px)
     @media (max-width: 600px) {
+      .navbar{flex-direction: column;}
+      .navbar-toggler{
+        display: flex;
+      }
+     .img-principal{
+      width: 50%;
+     }
+   
       padding: 10px;
       width: 100%;
       max-width: 100%;
@@ -31,6 +38,7 @@ body {
   
     // Media Query para pantallas grandes (1200px en adelante)
     @media (min-width: 1200px) {
+    
       padding: 30px;
       width: 80%;
     }

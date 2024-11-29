@@ -11,11 +11,13 @@ p {
 .img-principal {
   display: flex !important;
   position: relative;
-  top: -100px;
   padding: 5px;
-  margin-right: 0%;
-  margin-bottom: 0%;
-  margin-top: 10%;
+}
+.img-principal .img-male {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%;
 }
 
 .titulo-bienvenida {
@@ -45,6 +47,9 @@ p {
   height: 105px;
   justify-content: center;
   gap: 30px;
+}
+.navbar .navbar-toggler {
+  color: #30878c;
 }
 
 /*SCSS de Registro*/
@@ -555,7 +560,6 @@ body {
 
 .contenedor {
   width: 100%;
-  max-width: 1200px;
   margin: 0 auto;
   padding: 20px;
 }
@@ -564,6 +568,15 @@ body {
     padding: 10px;
     width: 100%;
     max-width: 100%;
+  }
+  .contenedor .navbar {
+    flex-direction: column;
+  }
+  .contenedor .navbar-toggler {
+    display: flex;
+  }
+  .contenedor .img-principal {
+    width: 50%;
   }
 }
 @media (max-width: 900px) {

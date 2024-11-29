@@ -4,11 +4,14 @@
 .img-principal{
     display: flex !important;
     position: relative;
-    top: -100px;
     padding: 5px;
-   margin-right: 0%;
-   margin-bottom: 0%;
-   margin-top: 10%;
+    .img-male{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 50%;
+    }
+
    
 }
 
@@ -40,4 +43,7 @@
     justify-content: center;
     gap: 30px;
 
+    .navbar-toggler{
+        color: #30878c;
+    }
   }
