@@ -1,0 +1,148 @@
+@media (max-width:320px){
+.navbar{
+    margin-bottom: 25%;
+    width: 100%;
+    
+    font-size: 10px;
+    text-align: center;
+    justify-content: space-between;
+    padding: 2px;
+}
+
+//registro
+.form-block-element{
+    display: flex;
+    width: 100%;
+   
+}
+
+//portafolio
+.grid-area{
+    grid-template-columns: repeat(4,2fr);
+    grid-template-rows: repeat(2,1fr);
+    font-size: small;
+    
+    .primera{
+        .database-img{display: none;}
+      
+    };
+  
+    .segunda{
+.male-pc{display: none;}
+
+    }
+}
+
+//proyectos
+.titulo-proyectos{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    font-size: medium;
+    display: block;
+}
+
+.proyecto-uno{
+    width: 80%;
+    height: auto;
+}
+
+.proyecto-dos{
+    width: 80%;
+    height: auto;
+}
+
+.proyecto-tres{
+    width: 80%;
+    height: auto;
+}
+
+.proyecto-cuatro{
+    width: 80%;
+    height: auto;
+}
+
+.barra-filtro{
+    width: 70%;
+
+
+}
+
+.footer{position: static;}
+
+}
+
+//MEDIA TABLETS 
+
+@media  (max-width:768px){
+
+//NAVBAR
+.navbar{
+    width: auto;
+    height: auto;
+    font-size: 14px;
+    justify-content: space-between;
+    
+}
+//REGISTRO
+
+
+   .container-registro{
+    width: 50%;
+    font-size: 15px;
+    text-align: center;
+    margin: 20px ;
+    text-align: center;
+    
+   } 
+    
+.form-block-element{
+    display: flex;
+    width: 50%;
+ 
+}
+
+//PORTAFOLIO
+.grid-area{
+    grid-template-columns: repeat(4,2fr);
+    grid-template-rows: repeat(2,1fr);
+    font-size: small; }
+    
+    .primera{
+        .database-img{display: none;}
+      
+    };
+
+    //PROYECTOS
+.titulo-proyectos{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    font-size: medium;
+    display: block;
+}
+
+.proyecto-uno{
+    margin-top: 50px;
+    width: 80%;
+    height: auto;
+}
+
+.proyecto-dos{
+    width: 80%;
+    height: auto;
+}
+.proyecto-tres{
+    width: 80%;
+    height: auto;
+}
+
+.proyecto-cuatro{
+    width: 80%;
+    height: auto;
+}
+
+.footer{
+    position: static;
+ 
+
+};
+ }
